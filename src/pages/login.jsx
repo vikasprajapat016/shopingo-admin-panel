@@ -49,7 +49,7 @@ const AdminLogin = () => {
       }
 
       toast.success(message || "Admin login successful");
-      navigate("/admin/dashboard", { replace: true });
+      navigate("/", { replace: true });
     } catch (err) {
       toast.error(
         err?.response?.data?.message || "Invalid credentials"
