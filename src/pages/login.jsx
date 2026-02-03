@@ -66,7 +66,7 @@ const AdminLogin = () => {
       user &&
       ["SUPER_ADMIN", "USER_ADMIN", "PRODUCT_ADMIN"].includes(user.role)
     ) {
-      navigate("/admin/dashboard", { replace: true });
+      navigate("/", { replace: true });
     }
   }, [user, navigate]);
 
