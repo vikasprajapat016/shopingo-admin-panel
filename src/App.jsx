@@ -51,7 +51,7 @@ function App() {
  <Route element={<AdminLayout/>}>
  
  <Route element={<ProtectedRoute allowedRoles={["SUPER_ADMIN","USER_ADMIN","PRODUCT_ADMIN"]} />}>
-    <Route path="/admin/dashboard" element={<Dashboard />} />
+    <Route path="/" element={<Dashboard />} />
   </Route>
 
   <Route element={<ProtectedRoute allowedRoles={["SUPER_ADMIN","USER_ADMIN"]} />}>

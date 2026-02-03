@@ -50,7 +50,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
         </h2>
 
         <nav className="flex-1 space-y-2 overflow-y-auto">
-          <Link to="/admin/dashboard" className={linkClass("/admin/dashboard")}>
+          <Link to="/" className={linkClass("/admin/dashboard")}>
             <FaChartBar /> Dashboard
           </Link>
 
